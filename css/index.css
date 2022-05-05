@@ -72,14 +72,19 @@ button{
 }
 
 .signup{
-    background-color: #984dff;
+    background-color: rgba(152,77,255,1);
     color: white;
     border: none;
     padding: 10px 8px;
     margin-left: 5px;
     border-radius: 5px;
     font-weight: 400;
+    transition: all 0.3s ease 0s;
 }
+.signup:hover{
+    background-color: rgba(72, 17, 148, 0.8);
+}
+
 .login{
     color: #984dff;
     border:none;
