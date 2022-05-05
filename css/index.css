@@ -110,7 +110,7 @@ button{
 
 }
 
-#searchBar{
+#search_query{
     font-size: 20px;
     margin-top: 30px;
     padding: 10px;
@@ -119,7 +119,7 @@ button{
     border: 1px solid #cecece;
     border-radius: 7px;
 }
-#searchBar:focus {
+#search_query:focus {
     outline-width: 0;
 }
 #searchBtn{

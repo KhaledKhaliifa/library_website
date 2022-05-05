@@ -1,0 +1,11 @@
+document.querySelector("#searchForm").addEventListener("submit",function(e){
+    e.preventDefault();
+    document.querySelector("#output").innerHTML ="";
+    fetch("http://openlibrary.org/search.json?q="+document.querySelector("#search_query").value)
+    .then(a=>a.json())
+    .then(response => {
+        for(let i = 0 ;i < 10; i++){
+            document.querySelector("#output").innerHTML += "<h2>" + response.docs[i].title+ "</h2>" + response.docs[i].author_name[0]+"<br><img src = 'http://covers.openlibrary.org/b/isbn/"+response.docs[i].isbn[0]+"-M.jpg'><br>";
+        }
+    })
+})

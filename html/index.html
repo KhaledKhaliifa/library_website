@@ -13,7 +13,6 @@
             <span id= "std-word" >STUDENT</span>
             <span id="lib-word">LIBRARY</span>
         </div>
-
         <nav>
             <ul class="nav_links">
                 <li id="homeBtn"><a herf="#">Home</a> </li>
@@ -27,11 +26,17 @@
         </div>
     </header>
     <div class="landing">
-        <p><span>Looking for a book?</span> We have it all here!</p>
-        <input type="text" id="searchBar" name="searchBar" placeholder="Search for a book...">
-        <input type="button" id="searchBtn" value="Search">
+        <p id="landingText"><span>Looking for a book?</span> We have it all here!</p>
+        <form id="searchForm" autocomplete="off">
+            <input type="text" id="search_query" name="searchBar" placeholder="Search for a book...">
+            <input type="submit" id="searchBtn" value="Search">
+        </form>
+    </div>
+    <div id="output">
     </div>
 
 
 </body>
+<script src="../scripts/index.js"></script>
+
 </html>
