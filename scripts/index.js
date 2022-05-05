@@ -14,7 +14,6 @@ document.querySelector("#searchForm").addEventListener("submit",function(e){
 window.onscroll = function() {myFunction()};
 // Get the navbar
 var searchbar = document.querySelector(".searchFormClass");
-
 // Get the offset position of the navbar
 var sticky = searchbar.offsetTop;
 
@@ -22,6 +21,7 @@ var sticky = searchbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     searchbar.classList.add("sticky");
+
   } else {
     searchbar.classList.remove("sticky");
   }
