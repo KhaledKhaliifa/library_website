@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
+    font-family: "Montserrat", "sans-serif";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,9 +13,9 @@
 .logo span{
     text-align-last: justify;
 
+
 }
 li, a, button{
-    font-family: "Montserrat", "sans-serif";
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
@@ -26,6 +27,7 @@ li, a, button{
     width: 20px;
     cursor:pointer;
     letter-spacing: 3px;
+    margin-right: 100px;
 }
 
 header{
@@ -34,8 +36,6 @@ header{
     align-items: center;
     padding: 40px 10%;
 }
-
-
 
 .nav_links{
     list-style: none;
@@ -78,7 +78,7 @@ button{
     padding: 10px 8px;
     margin-left: 5px;
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 600;
     transition: all 0.3s ease 0s;
 }
 .signup:hover{
@@ -91,3 +91,51 @@ button{
     font-weight: 600;
 
 }
+/*  =================================================================*/
+
+.landing{
+    text-align: center;
+}
+
+.landing p{
+    width: 550px;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+.landing span{
+    font-size: 50px;
+    color: #984dff;
+
+}
+
+#searchBar{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    padding: 20px 350px 20px 25px;
+    font-weight:500;
+    border: 1px solid #cecece;
+    border-radius: 7px;
+}
+#searchBar:focus {
+    outline-width: 0;
+}
+#searchBtn{
+    padding: 19px 50px 19px;
+    margin-left: 20px;
+    font-size: 20px;
+    border: 1px solid #cecece;
+    border-radius: 7px;
+    cursor: pointer;
+
+    background: linear-gradient(to right, #984dff 50%, white 50%);
+    background-size: 200% 100%;
+    transition: all .5s ease-out;
+    background-position: right bottom;
+}
+#searchBtn:hover {
+    background-position: left bottom;
+    color: white;
+  }
