@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.body{
+    overflow-y: visible;
 
+}
 *{
     font-family: "Montserrat", "sans-serif";
     box-sizing: border-box;
@@ -28,6 +31,7 @@ li, a, button{
     cursor:pointer;
     letter-spacing: 3px;
     margin-right: 100px;
+
 }
 
 header{
@@ -109,7 +113,8 @@ button{
     color: #984dff;
 
 }
-
+.searchFormClass{
+    text-align: center;}
 #search_query{
     font-size: 20px;
     margin-top: 30px;
@@ -118,6 +123,7 @@ button{
     font-weight:500;
     border: 1px solid #cecece;
     border-radius: 7px;
+
 }
 #search_query:focus {
     outline-width: 0;
@@ -139,3 +145,13 @@ button{
     background-position: left bottom;
     color: white;
   }
+.sticky {
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
