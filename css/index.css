@@ -3,9 +3,9 @@
     overflow-y: visible;
 
 }
-a:visited{
+a:visited,a{
     text-decoration: none;
-    color: black;
+    color: #984dff;
 }
 *{
     font-family: "Montserrat", "sans-serif";

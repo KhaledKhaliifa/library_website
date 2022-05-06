@@ -36,17 +36,27 @@ window.onload = function(){
 
 function displayResults(res){
 
-      item =  JSON.parse(res);
-      title = item.volumeInfo.title;
-      publisher = item.volumeInfo.publisher;
-      bookLink =  item.volumeInfo.previewLink;
+    item =  JSON.parse(res);
+    title = item.volumeInfo.title;
+    publisher = item.volumeInfo.publisher;
+    bookLink =  item.volumeInfo.previewLink;
+    date = item.volumeInfo.publishedDate;
+    pages = item.volumeInfo.pageCount;
+    language = item.volumeInfo.language;
+    author = item.volumeInfo.authors[0];
 
-      date = item.volumeInfo.publishedDate;
-      pages = item.volumeInfo.pageCount;
-      mature = item.volumeInfo.maturityRating;
-      language = item.volumeInfo.language;
+    if(author == undefined){
+        author="Author not found";
+    }
 
-      container.innerHTML +=formatOutput(title, author, publisher, bookLink,date,pages,mature,language);
+    mature = item.volumeInfo.maturityRating;  
+    if(mature =="MATURE"){
+        mature = "Mature";
+    }
+    else{
+        mature = "Not Mature";
+    }
+    container.innerHTML +=formatOutput(title, author, publisher, bookLink,date,pages,mature,language);
 
   }
   function formatOutput(title, author, publisher, bookLink,date,pages,mature,language) {
