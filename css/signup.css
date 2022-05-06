@@ -1,0 +1,113 @@
+.body{
+    background-image: linear-gradient( #984dff ,#fff);
+    flex-direction: column;
+    align-items: center;
+
+}
+
+*{
+   font-family: 'montserrat', sans-serif;
+   box-sizing: border-box;
+   outline: none; 
+   border:none;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
+.logo{
+    font-family: "montserrat";
+    font-weight: bold;
+    width:100%;
+    color: #fff;
+    font-size: 35px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#std-word{
+    letter-spacing: 3px;
+}
+
+#lib-word{
+    letter-spacing: 5.1px;
+}
+
+/**********************************************************/
+.form-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   padding:30px;
+   padding-bottom: 60px;
+   
+}
+
+.form-container form{
+   padding: 35px;
+   border-radius: 5px;
+   box-shadow: 0 10px 20px rgba(0,0,0,.1);
+   margin: auto;
+   background: #fff;
+   text-align: center;
+   width: 500px;
+}
+
+.form-container form h3{
+    margin: auto;
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#984dff;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 20px;
+    margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   text-transform: capitalize;
+   margin-top: 40px;
+   font-size: 20px;
+   background: linear-gradient(to right, #984dff 50%, white 50%);
+   background-position: right bottom;    
+   background-size: 200% 100%;
+   transition: all .6s ease-out;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+    background-position: left bottom;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:#984dff;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
