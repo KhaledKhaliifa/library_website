@@ -1,7 +1,6 @@
 let cards = document.querySelector(".cards");
 
 let item,title,author,publisher,bookLink,bookImg;
-let item2,title2,author2,publisher2,bookLink2,bookImg2;
 
 let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
 let placeHldr = "../images/LibraryLogo.png";
@@ -40,32 +39,36 @@ function displayResults(res){
 
     item = res.items[i];
     title = item.volumeInfo.title;
-    author = item.volumeInfo.author;
     publisher = item.volumeInfo.publisher;
     bookLink =  item.volumeInfo.previewLink;
-    bookImg = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr;
+    bookID = item.id;
 
+    bookImg = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr;
     
-    cards.innerHTML +=formatOutput(bookImg, title, author, publisher, bookLink);
-    console.log(cards);
+    cards.innerHTML +=formatOutput(bookImg, title, bookLink,bookID);
+    console.log(bookLink);
+    console.log(bookID);
   }
 }
 
-function formatOutput(bookImg, title, author, publisher, bookLink) {
- var htmlCard = `<div class="card">
+function formatOutput(bookImg, title, bookLink) {
+ var htmlCard = `
+
+  <div class="card">
   <img src="${bookImg}" class="card__image">
   <div class="card__content">
           ${title}
   </div>
   <div class="card__info">
 
-      <a href="viewer.html" target="__blank" class="card__link">Details</a>
+      <a href="viewer.html?bookID=${bookID}" target="__blank" class="card__link">Details</a>
   </div>
   
 </div>
   `
   return htmlCard;
 }
+
 
 
 ////////////////////////////////////////////////////////////////////////

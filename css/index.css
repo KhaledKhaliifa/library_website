@@ -37,6 +37,9 @@ li, a, button{
     margin-right: 100px;
 
 }
+#lib-word{
+    letter-spacing:5.2px;
+}
 
 header{
     display:flex;

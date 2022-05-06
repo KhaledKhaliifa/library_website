@@ -41,8 +41,7 @@ a:visited,a{
 }
 /*----------------------------------------------------------------*/
 .container{
-    display: flex;
-    margin: 50px 20%;
+    margin: 100px auto;
     width: 900px;
 }
 .col1{
@@ -65,8 +64,8 @@ a:visited,a{
     border-radius: 16px 16px 0 0 ;
 }
 table{
-    border-spacing: 60px 30px;
-    padding-bottom: 45px;
+    border-spacing: 90px 30px;
+
     border-radius: 16px;
 }
 .book-attr{
@@ -79,4 +78,5 @@ table{
 .card__link{
     margin-left: 43%;
     font-weight: bold;
+    cursor: pointer;
 }
