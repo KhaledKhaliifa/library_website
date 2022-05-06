@@ -61,7 +61,7 @@ function formatOutput(bookImg, title, author, publisher, bookLink) {
   </div>
   <div class="card__info">
 
-      <a href="${bookLink}" target="__blank" class="card__link">Details</a>
+      <a href="viewer.html" target="__blank" class="card__link">Details</a>
   </div>
   
 </div>
