@@ -4,21 +4,21 @@ let item,title,author,publisher,bookLink,bookImg;
 let item2,title2,author2,publisher2,bookLink2,bookImg2;
 
 let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
-let placeHldr = "https://fakeimg.pl/320x500/";
+let placeHldr = "../images/LibraryLogo.png";
 let searchData;
 
 document.querySelector("#searchForm").addEventListener("submit",function(e){
   e.preventDefault();
   cards.innerHTML = "";
   searchData = document.querySelector("#search_query").value;
+  
   if(searchData ==="" || searchData === null) {      
   }
   else{
     $.ajax({
-        url: bookUrl + searchData,
+        url: `${bookUrl + searchData}&maxResults=20`,
         dataType: "json",
         success: function(res){
-          console.log(res);
           if(res.totalItem === 0){
             alert("No results found.");
           }
@@ -52,9 +52,7 @@ function displayResults(res){
 }
 
 function formatOutput(bookImg, title, author, publisher, bookLink) {
-  // console.log(title + ""+ author +" "+ publisher +" "+ bookLink+" "+ bookImg)
-/*   var viewUrl = 'book.html?isbn='+bookIsbn; //constructing link for bookviewer
- */  var htmlCard = `<div class="card">
+ var htmlCard = `<div class="card">
   <img src="${bookImg}" class="card__image">
   <div class="card__content">
           ${title}
