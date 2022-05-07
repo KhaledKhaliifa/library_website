@@ -42,16 +42,17 @@ function displayResults(res){
     publisher = item.volumeInfo.publisher;
     bookLink =  item.volumeInfo.previewLink;
     bookID = item.id;
+    
 
     bookImg = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr;
     
-    cards.innerHTML +=formatOutput(bookImg, title, bookLink,bookID);
+    cards.innerHTML +=formatOutput(bookImg, title,bookID);
     console.log(bookLink);
     console.log(bookID);
   }
 }
 
-function formatOutput(bookImg, title, bookLink) {
+function formatOutput(bookImg, title, bookID) {
  var htmlCard = `
 
   <div class="card">
