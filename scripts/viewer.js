@@ -55,10 +55,10 @@ function displayResults(res){
     else{
         mature = "Not Mature";
     }
-    container.innerHTML +=formatOutput(title, author, publisher, bookLink,date,pages,mature,language);
+    container.innerHTML +=formatOutput(title, author, publisher,date,pages,mature,language);
 
   }
-  function formatOutput(title, author, publisher, bookLink,date,pages,mature,language) {
+  function formatOutput(title, author, publisher,date,pages,mature,language) {
     var htmlCard = `
    
     <div class="col2">
