@@ -84,7 +84,7 @@ function displayResults(res){
                             Release Date
                         </td>
                         <td class="attr-val">
-                            May 25th, 1996
+                            ${date}
                         </td>
                         <td class="book-attr">
                             Publisher
