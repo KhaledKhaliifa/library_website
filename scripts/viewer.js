@@ -7,7 +7,6 @@ let item,title,author,publisher,bookLink,bookImg;
 const container = document.querySelector(".container");
 
 console.log(bookID);
-
 let searchData;
 
 window.onload = function(){
@@ -117,7 +116,7 @@ function displayResults(res){
  
                     </tr>
                 </table>
-                <a href="${bookLink}" class="card__link">Read Book</p>
+                <a href="https://books.google.com.eg/books?id=${bookID}&printsec=frontcover#v=onepage&q&f=false" class="card__link">Read Book</p>
                 <br><br>
             </div>
      `
