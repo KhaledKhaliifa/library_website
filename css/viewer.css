@@ -3,7 +3,9 @@
     overflow-y: visible;
 
 }
-
+#lib-word{
+    letter-spacing:5.2px;
+}
 a:visited,a{
     text-decoration: none;
     color: #984dff;

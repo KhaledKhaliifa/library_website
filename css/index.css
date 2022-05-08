@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-.body{
-    overflow-y: visible;
 
+body{
+    overflow-y: visible;
 }
 a:visited,a{
     text-decoration: none;
@@ -12,7 +12,6 @@ a:visited,a{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
 }
 #std-word{
     color: #984dff;
