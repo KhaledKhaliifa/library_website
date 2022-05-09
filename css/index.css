@@ -3,10 +3,18 @@
 body{
     overflow-y: visible;
 }
+
+.body {
+    background-image: linear-gradient( #fff,#e1cbff);
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 a:visited,a{
     text-decoration: none;
     color: #984dff;
 }
+
 *{
     font-family: "Montserrat", "sans-serif";
     box-sizing: border-box;
@@ -16,6 +24,7 @@ a:visited,a{
 #std-word{
     color: #984dff;
 }
+
 .logo span{
     text-align-last: justify;
 
@@ -162,7 +171,7 @@ button{
 }
 /*////////////////////////////////////////////////////////////////*/
 .cards{
-    margin: 40px auto;
+    margin: 40px auto 0px;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -195,7 +204,7 @@ button{
 }
 
 .search-results-word{
-    margin-left: 200px;
+    margin: 30px 200px;
     font-size: 24px;
     font-weight: bold;
 }
