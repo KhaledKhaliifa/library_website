@@ -37,7 +37,7 @@ document.querySelector("#searchForm").addEventListener("submit",function(e){
         }
     })
   }
-  document.querySelector("#search_query").value="";
+  //document.querySelector("#search_query").value="";
   
 })
 
