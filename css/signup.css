@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .body{
-    background-image: linear-gradient( #984dff ,#fff);
+    background-image: linear-gradient( #e0cef9 ,#fff);
     flex-direction: column;
     align-items: center;
 
 }
 
 *{
-   font-family: 'montserrat', sans-serif;
-   box-sizing: border-box;
+   font-family: "Montserrat", "sans-serif";
+      box-sizing: border-box;
    outline: none; 
    border:none;
    margin: 0;
@@ -27,10 +29,12 @@
 
 #std-word{
     letter-spacing: 3px;
+    color:#984dff;
 }
 
 #lib-word{
     letter-spacing: 5.1px;
+    color: #333;
 }
 
 /**********************************************************/
