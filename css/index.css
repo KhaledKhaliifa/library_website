@@ -193,3 +193,9 @@ button{
     margin-bottom: 10px;
     font-weight: bold;
 }
+
+.search-results-word{
+    margin-left: 200px;
+    font-size: 24px;
+    font-weight: bold;
+}

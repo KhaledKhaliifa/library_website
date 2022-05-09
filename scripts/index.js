@@ -1,14 +1,21 @@
 let cards = document.querySelector(".cards");
-
+let myOutput = document.querySelector("#output");
 let item,title,author,publisher,bookLink,bookImg;
 
 let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
 let placeHldr = "../images/LibraryLogo.png";
 let searchData;
 
+let newDiv = document.createElement("div");
+newDiv.innerText="Search Results";
+newDiv.classList.add("search-results-word");
+
 document.querySelector("#searchForm").addEventListener("submit",function(e){
   e.preventDefault();
-  cards.innerHTML = "";
+  cards.innerHTML ="";
+  myOutput.removeChild(myOutput.childNodes[0]);
+  myOutput.prepend(newDiv);
+
   searchData = document.querySelector("#search_query").value;
   
   if(searchData ==="" || searchData === null) {      
@@ -35,6 +42,7 @@ document.querySelector("#searchForm").addEventListener("submit",function(e){
 })
 
 function displayResults(res){
+
   for(var i = 0 ; i < res.items.length;i++){
 
     item = res.items[i];
