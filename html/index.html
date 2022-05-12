@@ -8,37 +8,40 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span id= "std-word" >STUDENT</span>
-            <span id="lib-word">LIBRARY</span>
+    <div class="body">
+        <header>
+            <div class="logo">
+                <span id= "std-word" >STUDENT</span>
+                <span id="lib-word">LIBRARY</span>
+            </div>
+            <nav>
+                <ul class="nav_links">
+                    <li id="homeBtn"><a herf="#">Home</a> </li>
+                    <li id="booksBtn"><a herf="#">Books</a></li>
+                    <li id="membersBtn"><a herf="#">Members</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a  href="#"><button class="login">Login</button></a>
+                <a href="#"><button class="signup" >Sign Up</button></a>
+            </div>
+        </header>
+        <div class="landing">
+            <p id="landingText"><span>Looking for a book?</span> We have it all here!</p>
         </div>
-        <nav>
-            <ul class="nav_links">
-                <li id="homeBtn"><a herf="#">Home</a> </li>
-                <li id="booksBtn"><a herf="#">Books</a></li>
-                <li id="membersBtn"><a herf="#">Members</a></li>
-            </ul>
-        </nav>
-        <div class="buttons">
-            <a  href="#"><button class="login">Login</button></a>
-            <a href="#"><button class="signup" >Sign Up</button></a>
+        <div class="searchFormClass">
+            <form id="searchForm" autocomplete="off">
+                <input type="text" id="search_query" name="search_query" placeholder="Search for a book...">
+                <input type="submit" id="searchBtn" value="Search">
+            </form>
         </div>
-    </header>
-    <div class="landing">
-        <p id="landingText"><span>Looking for a book?</span> We have it all here!</p>
-    </div>
-    <div class="searchFormClass">
-        <form id="searchForm" autocomplete="off">
-            <input type="text" id="search_query" name="search_query" placeholder="Search for a book...">
-            <input type="submit" id="searchBtn" value="Search">
-        </form>
-    </div>
-    <div id="output">
-        <div class="cards">
-            
+        <div id="output">
+            <div class="cards">
+                
+            </div>
         </div>
     </div>
+    
 
 </body>
 <script src="../scripts/index.js"></script>
