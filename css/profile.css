@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.body{
+    overflow-y: visible;
+
+}
+#lib-word{
+    letter-spacing:5.2px;
+}
+a:visited,a{
+    text-decoration: none;
+    color: #984dff;
+}
+*{
+    font-family: "Montserrat", "sans-serif";
+    background-color: white;
+}
+.logo{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 30px;
+    width:100%;
+    letter-spacing: 3px;
+    }
+#std-word{
+    color: #984dff;
+}
+.word{
+    margin: 0 auto;
+    width:10%;
+    margin-top: 30px;
+    display:fixed;
+}
+.back-btn{
+    float:left;
+    margin-left: 350px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #984dff;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/*----------------------------------------------------------------*/
+.container{
+    margin: 100px auto;
+    width: 900px;
+}
+.col1{
+    width: 30%;
+    border-radius: 16px;
+}
+.col2{
+    list-style: none;
+    border:2px solid #f0f0f0;
+    border-radius: 16px;
+    box-shadow: 0 0 10px 5px #f0f0f0;
+    padding: 0px;
+}
+.book-info{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 15px;
+    border-radius: 16px 16px 0 0 ;
+}
+table{
+    border-spacing: 90px 30px;
+
+    border-radius: 16px;
+}
+.book-attr{
+    color: grey;
+}
+.attr-val{
+    color: black;
+    font-weight: bold;
+}
+.card__link{
+    margin-left: 43%;
+    font-weight: bold;
+    cursor: pointer;
+}
