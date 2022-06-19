@@ -34,7 +34,7 @@ if(!isset($_SESSION['user_name'])){
                 </ul>
             </nav>
             <div class="buttons">
-                <a  href="login.php"><button class="logout">Logout</button></a>
+                <a  href="logout.php"><button class="logout">Logout</button></a>
                 <a href="profile.php"><img src="../images/profile.png" class="profile" alt=""></a>
             </div>
         </header>

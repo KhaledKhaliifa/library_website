@@ -4,10 +4,10 @@
 
 session_start();
 
-if(!isset($_SESSION['admin_name'])){
+/*if(!isset($_SESSION['admin_name'])){
 
     header('location:login.php');
-}
+}*/
 
 ?>
 
@@ -35,18 +35,7 @@ if(!isset($_SESSION['admin_name'])){
                 </ul>
             </nav>
             <div class="buttons">
-                <a  href="login.php"><button class="logout">Logout</button></a>
-                <?php
-
-                    @include 'Configuration.php';
-
-                    session_start();
-                    session_unset();
-                    session_destroy();
-
-                    header('location:login.php');
-
-                ?>
+                <a  href="logout.php"><button class="logout">Logout</button></a>
                 <a href="profile.php"><img src="../images/profile.png" class="profile" alt=""></a>
             </div>
         </header>

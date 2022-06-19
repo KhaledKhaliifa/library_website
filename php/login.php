@@ -6,11 +6,9 @@ session_start();
 
 if(isset($_POST['submit'])){
 
-$name = mysqli_real_escape_string($conn,$_POST['name']);
 $email = mysqli_real_escape_string($conn,$_POST['email']);
 $pass = md5($_POST['password']);
-$cpass = md5($_POST['cpassword']);
-$user_type = $_POST['user_type'];
+
 
 $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
 
@@ -22,11 +20,11 @@ if(mysqli_num_rows($result) > 0){
 
         if($row['user_type'] == 'admin'){
             $_SESSION['admin_name'] = $row['name'];
-            header('locarion:index.php');
+            header('location:index.php');
 
         }elseif($row['user_type'] == 'user'){
             $_SESSION['user_name'] = $row['name'];
-            header('locarion:userindex.php');
+            header('location:userIndex.php');
         }    
     }else{
         $error[] = 'incorrect email or password';
@@ -78,7 +76,7 @@ if(mysqli_num_rows($result) > 0){
     
                <input type="email" name="email" required placeholder="enter your email">
                <input type="password" name="password" required placeholder="enter your password">
-               <a href="userIndex.php">"<input type="submit" name="submit" value="login now" class="form-btn"> </a>
+               <input type="submit" name="submit" value="login now" class="form-btn" >
     
                <p>don't have an account? <a href="signup.php">register now</a></p>
             </form>
@@ -88,5 +86,4 @@ if(mysqli_num_rows($result) > 0){
     </div>
     
 </body>
-<script src ="../scripts/login.js"></script>
 </html>
