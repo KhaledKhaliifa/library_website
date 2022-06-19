@@ -1,3 +1,8 @@
+let test = localStorage.getItem('test');
+console.log(test);
+
+
+
 let cards = document.querySelector(".cards");
 let myOutput = document.querySelector("#output");
 let item,title,author,publisher,bookLink,bookImg;

@@ -90,7 +90,7 @@ button{
     cursor:pointer;
 }
 
-.signup{
+.logout{
     background-color: rgba(152,77,255,1);
     color: white;
     border: none;
@@ -100,14 +100,16 @@ button{
     font-weight: 600;
     transition: all 0.3s ease 0s;
 }
-.signup:hover{
+.logout:hover{
     background-color: rgba(72, 17, 148, 0.8);
 }
 
-.login{
+.profile{
     color: #984dff;
     border:none;
-    font-weight: 600;
+    width: 40px;
+    position: absolute;
+    margin-left: 5px;
 
 }
 /*  =================================================================*/
