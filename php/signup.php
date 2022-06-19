@@ -83,7 +83,7 @@ if(mysqli_num_rows($result) > 0){
          <option value="admin">admin</option>
       </select>
       
-    <input type="submit" name="submit" value="register now" class="form-btn"> 
+    <a href="login.php"> <input type="submit" name="submit" value="register now" class="form-btn" >  </a>
     <p>already have an account? <a href="login.php">login now</a></p>
    </form>
 
