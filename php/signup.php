@@ -90,5 +90,4 @@ if(mysqli_num_rows($result) > 0){
     </div>
 </div>
 </body>
-<script src ="../scripts/signup.js"></script>
 </html>
