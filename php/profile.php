@@ -10,7 +10,7 @@
 <body>
     <header>
         <div >
-            <a href="index.html" class="back-btn">Back</a>
+            <a href="userIndex.php" class="back-btn">Back</a>
         </div>
         <div class="logo">
             <div class="word">

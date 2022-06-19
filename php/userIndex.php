@@ -1,3 +1,17 @@
+<?php
+
+@include 'Configuration.php';
+
+session_start();
+
+if(!isset($_SESSION['user_name'])){
+
+    header('location:login.php');
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +31,11 @@
             <nav>
                 <ul class="nav_links">
                     <li id="homeBtn"><a herf="#">Home</a> </li>
-                    <li id="membersBtn"><a herf="#">Members</a></li>
                 </ul>
             </nav>
             <div class="buttons">
-                <a  href="login.html"><button class="logout">Logout</button></a>
-                <a href="profile.html"><img src="../images/profile.png" class="profile" alt=""></a>
+                <a  href="login.php"><button class="logout">Logout</button></a>
+                <a href="profile.php"><img src="../images/profile.png" class="profile" alt=""></a>
             </div>
         </header>
         <div class="landing">
@@ -45,6 +58,4 @@
 </body>
 <script src="../scripts/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
 </html>
