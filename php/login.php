@@ -78,7 +78,7 @@ if(mysqli_num_rows($result) > 0){
     
                <input type="email" name="email" required placeholder="enter your email">
                <input type="password" name="password" required placeholder="enter your password">
-               <input type="submit" name="submit" value="login now" class="form-btn">
+               <a href="userIndex.php">"<input type="submit" name="submit" value="login now" class="form-btn"> </a>
     
                <p>don't have an account? <a href="signup.php">register now</a></p>
             </form>
