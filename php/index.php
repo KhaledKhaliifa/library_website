@@ -4,10 +4,10 @@
 
 session_start();
 
-/*if(!isset($_SESSION['admin_name'])){
+if(!isset($_SESSION['admin_name'])){
 
     header('location:login.php');
-}*/
+}
 
 ?>
 
@@ -30,13 +30,13 @@ session_start();
             </div>
             <nav>
                 <ul class="nav_links">
-                    <li id="homeBtn"><a herf="index.php">Home</a> </li>
-                    <li id="membersBtn"><a herf="members.php">Members</a></li>
+                    <li id="homeBtn"><a href="index.php">Home</a> </li>
+                    <li id="membersBtn"><a href="members.php">Members</a></li>
                 </ul>
             </nav>
             <div class="buttons">
                 <a  href="logout.php"><button class="logout">Logout</button></a>
-                <a href="profile.php"><img src="../images/profile.png" class="profile" alt=""></a>
+                <a href="adminprofile.php"><img src="../images/profile.png" class="profile" alt=""></a>
             </div>
         </header>
         <div class="landing">

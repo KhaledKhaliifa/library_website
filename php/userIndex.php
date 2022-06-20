@@ -35,7 +35,7 @@ if(!isset($_SESSION['user_name'])){
             </nav>
             <div class="buttons">
                 <a  href="logout.php"><button class="logout">Logout</button></a>
-                <a href="profile.php"><img src="../images/profile.png" class="profile" alt=""></a>
+                <a href="userprofile.php"><img src="../images/profile.png" class="profile" alt=""></a>
             </div>
         </header>
         <div class="landing">

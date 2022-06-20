@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Website</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <div class="body">
@@ -31,6 +31,12 @@
             <form id="deleteForm" autocomplete="off">
                 <input type="text" id="delete_query" name="search_query" placeholder="Remove a member...">
                 <input type="submit" id="deleteBtn" value="Remove">
+                <?php
+                include'Configuration.php';
+                $sql = "DELETE FROM user_form WHERE id='" . $_GET["search_query"] . "'";
+                
+                
+                ?>
             </form>
         </div>
         <div id="membersOutput">
@@ -44,23 +50,27 @@
                 </tr>
 
                 <div>
-                    <tr>
-                      <td>
-                        1
-                      </td>  
-                      <td>
-                        Khaled
-                      </td>
-                      <td>
-                        Male
-                      </td>
-                      <td>
-                        21
-                      </td>
-                      <td>
-                        khaledmedhat64@gmail.com
-                      </td>
-                    </tr>
+                    <?php
+                            include'Configuration.php';
+
+                            
+                                $query = "SELECT * FROM user_form WHERE user_type = 'user'";     
+
+                                $result = mysqli_query($conn, $query);
+
+                                while($row = mysqli_fetch_assoc($result)){ 
+                                    
+                                echo 
+                                "<tr><td>".$row['id'].
+                                "</td><td>".$row['name'].
+                                "</td><td>".$row['gender'].
+                                "</td><td>".$row['age'].
+                                "</td><td>".$row['email'].
+                                "</td></tr>";
+
+                                }
+                        ?>
+                    
                 </div>
             </table>
         </div>
