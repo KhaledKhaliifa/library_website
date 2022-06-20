@@ -78,6 +78,14 @@ if(mysqli_num_rows($result) > 0){
       <input type="email" name="email" required placeholder="enter your email">
       <input type="password" name="password" required placeholder="enter your password">
       <input type="password" name="cpassword" required placeholder="confirm your password">
+      <input type="number" name="age" required placeholder="enter your age">
+      <input type="text" name="address" required placeholder="enter your address">
+      
+      <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
       <select name="user_type">
          <option value="user">user</option>
          <option value="admin">admin</option>
