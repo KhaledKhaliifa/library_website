@@ -30,8 +30,8 @@ session_start();
             </div>
             <nav>
                 <ul class="nav_links">
-                    <li id="homeBtn"><a herf="#">Home</a> </li>
-                    <li id="membersBtn"><a herf="#">Members</a></li>
+                    <li id="homeBtn"><a herf="index.php">Home</a> </li>
+                    <li id="membersBtn"><a herf="members.php">Members</a></li>
                 </ul>
             </nav>
             <div class="buttons">
