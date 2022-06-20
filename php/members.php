@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,15 +27,10 @@
         </header>
 
         <div class="searchFormClass">
-            <form id="deleteForm" autocomplete="off">
+            <form id="deleteForm" autocomplete="off" action="delete.php" method="post">
                 <input type="text" id="delete_query" name="search_query" placeholder="Remove a member...">
-                <input type="submit" id="deleteBtn" value="Remove">
-                <?php
-                include'Configuration.php';
-                $sql = "DELETE FROM user_form WHERE id='" . $_GET["search_query"] . "'";
+                <input type="submit" id="deleteBtn" name="deleteBtn" value="Remove">
                 
-                
-                ?>
             </form>
         </div>
         <div id="membersOutput">
